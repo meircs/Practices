@@ -1,14 +1,12 @@
-let str = prompt("Enter");
+let str = prompt("Enter the color, please");
 
 if (str.includes('#')) {
 	convert_hex_rgb(str);
-}
-
-else {
+} else {
 	convert_rgb_hex(str);
 }
-	// Convert HEX to RGB
-	
+
+		// Convert HEX to RGB
 	function convert_hex_rgb(str) {
 	let RGB = [];
 	let new_rgb = [];
@@ -34,7 +32,7 @@ else {
 
 	}
 	
-//Convert for RGB to HEX
+		//Convert for RGB to HEX
 	function convert_rgb_hex(str) {
 		var nRGB = str.split(",");
 		HEX = ["#"];
